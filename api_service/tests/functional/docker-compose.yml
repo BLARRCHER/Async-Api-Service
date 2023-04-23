@@ -1,0 +1,32 @@
+services:
+  fastapi:
+    build:
+      context: ../../
+      dockerfile: Dockerfile.tests
+    image: fastapi-image
+    ports:
+      - "8000:8000"
+    env_file: ../../../.env
+    entrypoint: >
+      bash -c "cd src && uvicorn main:app --host 0.0.0.0 --port 8000"
+
+  tests:
+    image: fastapi-image
+    env_file: ../../../.env
+    entrypoint: >
+      bash -c "python tests/functional/run_waiters.py
+      && pytest tests/functional/src"
+
+  elastic_search:
+    image: elasticsearch:7.7.0
+    expose:
+      - "9200"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+
+  redis:
+    image: redis:7.0
+    expose:
+      - "6379"

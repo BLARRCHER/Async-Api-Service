@@ -1,0 +1,22 @@
+{
+  "uuid": "e4626af1-7fd5-414b-ba82-555555555555",
+  "imdb_rating": 7.5,
+  "genre": [
+      {
+          "uuid": "b11c9be1-b619-4ef5-be1b-a1cd9ef265b7",
+          "name": "Documentary"
+      }
+  ],
+  "title": "Jade: The Reality Star Who Changed Britain 25",
+  "description": "Series exploring the life of Jade Goody: the UK's most loved - and hated - reality TV star.",
+  "directors": [
+      {
+          "uuid": "caa8b54a-eb5e-4134-8ae2-a3946a428ec7",
+          "full_name": "director pervogo filma"
+      }
+  ],
+  "actors_names": [],
+  "writers_names": [],
+  "actors": [],
+  "writers": []
+}

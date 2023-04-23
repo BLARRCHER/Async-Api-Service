@@ -1,0 +1,18 @@
+[
+  {
+    "uuid": "e508c1c8-1111-4136-80b4-340c4befb190",
+    "name": "Reality-TV"
+  },
+  {
+    "uuid": "f24fd632-2222-4273-a835-0119bd12f829",
+    "name": "News"
+  },
+  {
+    "uuid": "f39d7b6d-3333-40b1-aaf0-cf05e7048011",
+    "name": "Horror"
+  },
+  {
+    "uuid": "b11c9be1-b619-4ef5-be1b-a1cd9ef265b7",
+    "name": "Documentary"
+  }
+]

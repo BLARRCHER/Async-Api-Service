@@ -1,0 +1,23 @@
+version: '3'
+services:
+  service_db:
+    restart: always
+    image: postgres:13
+    expose:
+      - "5432"
+    env_file:
+      - .env
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data/
+
+  api_service:
+    build: api_service
+    expose:
+      - "8080"
+    env_file:
+      - .env
+    depends_on:
+      - service_db
+
+volumes:
+  postgresql_data:

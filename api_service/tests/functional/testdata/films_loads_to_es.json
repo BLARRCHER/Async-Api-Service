@@ -1,0 +1,104 @@
+[
+  {
+    "uuid": "e4626af1-7fd5-414b-ba82-555555555555",
+    "imdb_rating": 7.5,
+    "genre": [
+        {
+            "uuid": "b11c9be1-b619-4ef5-be1b-a1cd9ef265b7",
+            "name": "Documentary"
+        }
+    ],
+    "title": "Jade: The Reality Star Who Changed Britain 25",
+    "description": "Series exploring the life of Jade Goody: the UK's most loved - and hated - reality TV star.",
+    "directors": [
+        {
+            "uuid": "caa8b54a-eb5e-4134-8ae2-a3946a428ec7",
+            "full_name": "director pervogo filma"
+        }
+    ],
+    "actors_names": [],
+    "writers_names": [],
+    "actors": [],
+    "writers": []
+  },
+  {
+    "uuid": "1b7d7c64-8be8-47db-8924-d690455277cc",
+    "imdb_rating": 7.3,
+    "genre": [
+        {
+            "uuid": "e508c1c8-1111-4136-80b4-340c4befb190",
+            "name": "Reality-TV"
+        },
+        {
+            "uuid": "b11c9be1-b619-4ef5-be1b-a1cd9ef265b7",
+            "name": "Documentary"
+        }
+    ],
+    "title": "Star Trek 9",
+    "description": "The most acclaimed Star Trek adventure of all time with an important message.",
+    "directors": [
+        {
+            "uuid": "20354d7a-e4fe-47af-8ff6-187bca92f3f9",
+            "full_name": "Leonard Nimoy"
+        }
+    ],
+    "actors_names": [
+      "William Shatner",
+      "Leonard Nimoy",
+      "DeForest Kelley",
+      "James Doohan"
+    ],
+    "writers_names": [
+      "Peter Krikes",
+      "Steve Meerson",
+      "Nicholas Meyer",
+      "Gene Roddenberry",
+      "Leonard Nimoy",
+      "Harve Bennett"
+    ],
+    "actors": [
+      {
+        "uuid": "9758b894-57d7-465d-b657-c5803dd5b7f7",
+        "full_name": "William Shatner"
+      },
+      {
+        "uuid": "5a3d0299-2df2-4070-9fda-65ff4dfa863c",
+        "full_name": "Leonard Nimoy"
+      },
+      {
+        "uuid": "836bb95b-6db8-4418-a110-f41663b1c025",
+        "full_name": "DeForest Kelley"
+      },
+      {
+        "uuid": "2d6f6284-13ce-4d25-9453-c4335432c116",
+        "full_name": "Adam Driver"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "7caea3e2-194c-4876-be8f-60b1a4743d21",
+        "full_name": "Peter Krikes"
+      },
+      {
+        "uuid": "74b4cc18-9fb3-4796-b718-2d0fa4f84fb4",
+        "full_name": "Steve Meerson"
+      },
+      {
+        "uuid": "c883c2c6-d7a4-4001-8084-e2851904e91a",
+        "full_name": "Nicholas Meyer"
+      },
+      {
+        "uuid": "6960e2ca-889f-41f5-b728-1e7313e54d6c",
+        "full_name": "Gene Roddenberry"
+      },
+      {
+        "uuid": "5a3d0299-2df2-4070-9fda-65ff4dfa863c",
+        "full_name": "Leonard Nimoy"
+      },
+      {
+        "uuid": "58411ec0-c40a-43da-95e3-0adc74b7e7f6",
+        "full_name": "Harve Bennett"
+      }
+    ]
+  }
+]

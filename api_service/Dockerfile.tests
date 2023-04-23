@@ -1,0 +1,21 @@
+FROM python:3.10
+
+WORKDIR /opt/api_service
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+COPY requirements.txt requirements.txt
+COPY tests/functional/requirements-tests.txt requirements-tests.txt
+COPY wait_for_it.sh wait_for_it.sh
+
+RUN  pip install --upgrade pip \
+     && pip install -r requirements.txt \
+     && pip install -r requirements-tests.txt \
+     && sed $'s/\r$//' ./wait_for_it.sh > ./wait_for_it.unix.sh \
+     && chmod +x wait_for_it.unix.sh
+
+COPY . .
+
+ENTRYPOINT ["./wait_for_it.unix.sh", "elastic_search:9200", "--", "./wait_for_it.unix.sh", "redis:6379", "--", "pytest", "tests/functional/src"]
+#"tail", "-f", "/dev/null"
